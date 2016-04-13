@@ -1,0 +1,11 @@
+{% extends 'core/base.html' %}
+
+      {% block content %}
+      <h1>Hello World!</h1>
+      <p>BlaBlaBla</p>
+      <p><strong><a href="{% url 'subscriptions:subscribe' %}">Inscreva-se já!</a></strong></p>
+      <p><strong><a href="{% url 'core:talk_list' %}">Palestras</a></strong></p>
+
+      <p><strong>Testing Django... </strong></p>
+      <p>Para dúvidas e mais informações entre em contato com <a href="mailto:azk4n@null.net">azk4n@null.net</a></p>
+      {% endblock content %}
