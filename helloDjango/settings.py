@@ -26,7 +26,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'helloDjango.core',
-    'helloDjango.subscriptions'
+    'helloDjango.subscriptions',
+    'django_nose'
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -103,6 +104,13 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
+
+NOSE_ARGS = [
+    '--with-coverage',
+    '--cover-package=helloDjango',
+]
 
 
 # Static files (CSS, JavaScript, Images)
